@@ -1,0 +1,42 @@
+﻿<Window x:Class="Play_Stream.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:winForms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Play_Stream"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen" 
+        Title="Play_Stream" Height="378.474" Width="582.684"
+        AllowsTransparency="True" 
+        Background="#50100064"
+        WindowStyle="None"
+        ResizeMode="CanResizeWithGrip">
+    <Grid Name="grid" Margin="0,0,10,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="89*"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        <Menu x:Name="menu" Background="#90104076" HorizontalAlignment="Left" Height="243" Margin="186,88,0,0" VerticalAlignment="Top" Width="236" Grid.RowSpan="2">
+            <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="22" FontFamily="Trebuchet MS" Height="233" Width="226"/>
+        </Menu>
+        <Button x:Name="button" Content="終了" HorizontalAlignment="Left" Margin="430,150.146,-1,0" VerticalAlignment="Top" Width="144" FontSize="16" FontWeight="Bold" Height="45" Click="button_Click" Grid.Row="1"/>
+        <Button x:Name="button5" Content="BGMを設定" HorizontalAlignment="Left" Margin="222,5,0,0" VerticalAlignment="Top" Width="176" FontSize="16" FontWeight="Bold" Height="47" Click="button5_Click"/>
+        <Button x:Name="button6" Content="BGM停止" HorizontalAlignment="Left" Margin="222,57,0,0" VerticalAlignment="Top" Width="88" FontSize="16" FontWeight="Bold" Click="button6_Click"/>
+        <Button x:Name="button7" Content="BGM再生" HorizontalAlignment="Left" Margin="315,57,0,0" VerticalAlignment="Top" Width="83" FontSize="16" FontWeight="Bold" Click="button7_Click"/>
+        <Slider x:Name="slider" HorizontalAlignment="Left" Margin="38,52,0,0" VerticalAlignment="Top" Width="135"/>
+        <Slider x:Name="slider1" HorizontalAlignment="Left" Margin="428,52,0,0" VerticalAlignment="Top" Width="135"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="442,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" Height="25" Width="52" FontSize="20"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="514,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.571,0.534" Height="25" FontSize="20" Foreground="White"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="96,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Foreground="White" FontSize="20"/>
+        <CheckBox x:Name="checkBox" Content="" HorizontalAlignment="Left" Margin="247,166.146,0,0" VerticalAlignment="Top" FontSize="16" Grid.Row="1" />
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="267,158.146,0,0" TextWrapping="Wrap" Text="ランダム再生" VerticalAlignment="Top" Foreground="White" FontSize="20" Grid.Row="1"/>
+        <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="5,127,0,-4" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="22" FontFamily="Kalam" FontWeight="Bold" Grid.Row="1"><Run Text="V1.0"/><LineBreak/><Run Text="Created By SRTTbacon"/></TextBlock>
+        <Button x:Name="button9" Content="ー10" HorizontalAlignment="Left" Margin="442,10,0,0" VerticalAlignment="Top" Width="43" FontSize="16" Height="32" Click="button9_Click"/>
+        <Button x:Name="button11" Content="＋10" HorizontalAlignment="Left" Margin="514,12,0,0" VerticalAlignment="Top" Width="43" FontSize="16" Height="32" Click="button11_Click"/>
+        <Button x:Name="button1" Content="ファイルの再生" HorizontalAlignment="Left" Margin="10,12,0,0" VerticalAlignment="Top" Width="109" Height="37" FontSize="16" FontWeight="Bold" Click="button1_Click"/>
+        <Button x:Name="button2" Content="再生" HorizontalAlignment="Left" Margin="124,12,0,0" VerticalAlignment="Top" Width="69" FontSize="16" FontWeight="Bold" Height="35" Click="button2_Click"/>
+        <Button x:Name="button3" Content="高度な音楽" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Width="163" FontSize="20" FontWeight="Bold" Height="55" Grid.Row="1" Click="button3_Click"/>
+        <Button x:Name="button4" Content="スキップ" HorizontalAlignment="Left" Margin="38,140,0,0" VerticalAlignment="Top" Width="116" FontSize="18" FontWeight="Bold" Height="38" Click="button4_Click"/>
+    </Grid>
+</Window>
