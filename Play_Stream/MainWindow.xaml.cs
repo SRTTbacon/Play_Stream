@@ -302,6 +302,7 @@ namespace Play_Stream
 
         private void button3_Click(object sender, RoutedEventArgs e)
         {
+            Player.settings.volume = 100;
             Player.controls.stop();
             Page.DX_Player f = new Page.DX_Player();
             f.Show();
